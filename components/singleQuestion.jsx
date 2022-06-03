@@ -31,6 +31,10 @@ const SingleQuestion = (
                     toast({title:'Please give an input', status:'warning', duration: 2000})
                     return
                 }
+                if(inputType==="number" && parseInt(answer) === 0) {
+                    toast({title:'Please give a valid input', status:'warning', duration: 2000})
+                    return
+                }
                 handleNext(factor,answer);
             }}>
                 <FormControl   

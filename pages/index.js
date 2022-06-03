@@ -71,6 +71,7 @@ const handlePrev = () => {
       <VStack mt={5}>
         {
           Object.keys(report).map((i,idx,arr) => (idx === 0 || report[Object.keys(report)[idx-1]]?.answer !== null) &&  <SingleQuestion
+          key={idx}
           num={idx+1}
           factor={i}
           ans={report[i].answer ? report[i].answer : undefined}
