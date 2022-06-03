@@ -83,10 +83,10 @@ const OutputModal = ({isOpen,onClose,reports}) => {
     return (
         <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent className='fadeIn'>
           <ModalHeader>Your results</ModalHeader>
           <ModalCloseButton />
-          <ModalBody>
+          <ModalBody >
             {
                 loading ?
                 <Flex justifyContent={'center'}>

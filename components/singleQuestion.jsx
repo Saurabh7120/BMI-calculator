@@ -24,7 +24,7 @@ const SingleQuestion = (
     },[ans])
 
     return (
-        <Box w='90%' boxShadow={active ? 'md' : 'none'} p={3} borderRadius={'md'}>
+        <Box className='fadeIn' w='90%' boxShadow={active ? 'md' : 'none'} p={3} borderRadius={'md'}>
             <form onSubmit={e => {
                 e.preventDefault();
                 if(answer.trim().length === 0) {
